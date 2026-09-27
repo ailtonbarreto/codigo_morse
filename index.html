@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor Morse</title>
+</head>
+
+<body>
+
+    <h1>Conversor Código Morse</h1>
+
+    <div class="container">
+        <textarea id="input" placeholder="Morse"></textarea>
+
+        <button class="swap-btn" onclick="inverterCampos()">↔</button>
+
+        <textarea id="output" placeholder="Texto" readonly></textarea>
+    </div>
+
+    <div class="buttons">
+        <button onclick="traduzir()">Traduzir</button>
+        <button onclick="copiarTexto()">Copiar resultado</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
