@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -34,6 +34,8 @@ textarea {
   padding: 10px;
   font-size: 18px;
   resize: none;
+  border: 2px solid #007bff;
+  outline: none;
 }
 
 .swap-btn {
@@ -55,10 +57,10 @@ textarea {
 .buttons {
   margin-top: 20px;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: row;
+  gap: 40px;
   width: 100%;
-  max-width: 300px;
+  max-width: 30%;
 }
 
 .buttons button {
@@ -78,6 +80,7 @@ textarea {
 
 
 @media (max-width: 768px) {
+
   .container {
     flex-direction: column;
     width: 90%;
@@ -88,8 +91,13 @@ textarea {
     width: 100%;
   }
 
-  .buttons button{
-    margin: 10px 0;
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
     width: 100%;
+    max-width: 90%;
   }
+
 }
