@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <title>Conversor Morse</title>
 </head>
@@ -15,7 +16,9 @@
     <div class="container">
         <textarea id="input" placeholder="Morse"></textarea>
 
-        <button class="swap-btn" onclick="inverterCampos()">↔</button>
+        <span class="material-symbols-outlined swap-btn" onclick="inverterCampos()">
+            forward_media
+        </span>
 
         <textarea id="output" placeholder="Texto" readonly></textarea>
     </div>
