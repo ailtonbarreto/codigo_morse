@@ -45,6 +45,7 @@ textarea {
   resize: none;
   border: 2px solid #007bff;
   outline: none;
+  border-radius: 0.5rem;
 }
 
 .swap-btn {
