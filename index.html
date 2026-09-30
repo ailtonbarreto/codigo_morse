@@ -6,26 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
-    <title>Conversor Morse</title>
+    <link rel="shortcut icon" href="./assets/lock.ico" type="image/x-icon">
+    <title>Tradutor Criptográfico</title>
 </head>
 
 <body>
 
-    <h1>Tradutor Criptográfico</h1>
+    <header>
 
-    <div class="container">
-        <textarea id="input" placeholder="Mensagem Criptografada"></textarea>
+        <h1>Tradutor Criptográfico</h1>
 
         <span class="material-symbols-outlined swap-btn" onclick="inverterCampos()">
             forward_media
         </span>
 
-        <textarea id="output" placeholder="Texto" readonly></textarea>
+    </header>
+
+
+    <div class="container">
+        <textarea id="input" placeholder="Mensagem Criptografada"></textarea>
+
+
+        <textarea id="output" placeholder="Mensagem" readonly></textarea>
     </div>
 
     <div class="buttons">
-        <button onclick="traduzir()">Processar</button>
-        <button onclick="copiarTexto()">Copiar resultado</button>
+        <button id="translate_btn" onclick="traduzir()">Descriptografar</button>
+        <button onclick="copiarTexto()">Copiar</button>
     </div>
 
     <script src="script.js"></script>

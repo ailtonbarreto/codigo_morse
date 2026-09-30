@@ -15,16 +15,25 @@ body {
   height: 100vh;
 }
 
+header {
+  width: 50%;
+  margin: 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 h1 {
-  margin-bottom: 20px;
   text-align: center;
+  color: #007bff;
 }
 
 .container {
   display: flex;
   gap: 20px;
-  height: 40%;
-  justify-content: space-around;
+  height: 40vh;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -39,9 +48,10 @@ textarea {
 }
 
 .swap-btn {
-  background: #007bff;
+  background: #ff9900;
   color: white;
   border: none;
+  user-select: none;
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
@@ -50,7 +60,6 @@ textarea {
 }
 
 .swap-btn:hover {
-  background: #0056b3;
   transform: rotate(180deg);
 }
 
@@ -78,8 +87,17 @@ textarea {
   background: #0056b3;
 }
 
+#translate_btn {
+  background: #03df9d;
+}
 
+/* --------------------------------------------- */
 @media (max-width: 768px) {
+
+  header {
+    width: 90%;
+    margin: 3vw 0;
+  }
 
   .container {
     flex-direction: column;
